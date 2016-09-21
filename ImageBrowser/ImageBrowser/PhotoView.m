@@ -30,17 +30,21 @@
         if (!isCached) {//没有缓存
             HUD = [MBProgressHUD showHUDAddedTo:self animated:YES];
             HUD.mode = MBProgressHUDModeDeterminate;
+            
+            [self.imageView sd_setImageWithURL:[NSURL URLWithString:photoUrl] placeholderImage:[UIImage imageNamed:@"ic-zanwu@3x"] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize){
+                HUD.progress = ((float)receivedSize)/expectedSize;
+            } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL){
+                self.imageView.frame=[self caculateOriginImageSizeWith:image];
+                NSLog(@"图片加载完成");
+                if (!isCached) {
+                    [HUD hide:YES];
+                }
+            }];
+        }else{//直接取出缓存的图片，减少流量消耗
+            UIImage *cachedImage = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:photoUrl];
+            self.imageView.frame=[self caculateOriginImageSizeWith:cachedImage];
+            self.imageView.image=cachedImage;
         }
-
-        [self.imageView sd_setImageWithURL:[NSURL URLWithString:photoUrl] placeholderImage:[UIImage imageNamed:@"ic-zanwu@3x"] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize){
-            HUD.progress = ((float)receivedSize)/expectedSize;
-        } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL){
-            self.imageView.frame=[self caculateOriginImageSizeWith:image];
-            NSLog(@"图片加载完成");
-            if (!isCached) {
-                [HUD hide:YES];
-            }
-        }];
     }
     return self;
 }
