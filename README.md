@@ -9,4 +9,5 @@
 - 支持多种界面跳转方式，push、present、zoom等。
 - 支持轮播、双指缩放、双击放大、单击返回等。
 
-##### Maked by Mask.
+#### 作者 
+- Mask
