@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41C4E21124FF3E6F00927D8C /* ImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C4E20D24FF3E6F00927D8C /* ImageBrowserViewController.m */; };
+		41C4E21224FF3E6F00927D8C /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C4E21024FF3E6F00927D8C /* PhotoView.m */; };
 		66B5218D1D864A9800EBC741 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5218C1D864A9800EBC741 /* main.m */; };
 		66B521901D864A9800EBC741 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5218F1D864A9800EBC741 /* AppDelegate.m */; };
 		66B521931D864A9800EBC741 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B521921D864A9800EBC741 /* ViewController.m */; };
@@ -15,8 +17,6 @@
 		66B5219B1D864A9800EBC741 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B521991D864A9800EBC741 /* LaunchScreen.storyboard */; };
 		66B521A61D864A9800EBC741 /* ImageBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B521A51D864A9800EBC741 /* ImageBrowserTests.m */; };
 		66B521B11D864A9900EBC741 /* ImageBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B521B01D864A9900EBC741 /* ImageBrowserUITests.m */; };
-		66B521C01D864B3900EBC741 /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B521BF1D864B3900EBC741 /* PhotoView.m */; };
-		66B521C31D864B8600EBC741 /* ImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B521C21D864B8600EBC741 /* ImageBrowserViewController.m */; };
 		66B521CE1D864DAA00EBC741 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66B521C51D864DAA00EBC741 /* 1.png */; };
 		66B521CF1D864DAA00EBC741 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66B521C61D864DAA00EBC741 /* 2.png */; };
 		66B521D01D864DAA00EBC741 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 66B521C71D864DAA00EBC741 /* 3.png */; };
@@ -65,6 +65,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41C4E20D24FF3E6F00927D8C /* ImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserViewController.m; sourceTree = "<group>"; };
+		41C4E20E24FF3E6F00927D8C /* PhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoView.h; sourceTree = "<group>"; };
+		41C4E20F24FF3E6F00927D8C /* ImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserViewController.h; sourceTree = "<group>"; };
+		41C4E21024FF3E6F00927D8C /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
 		66B521881D864A9800EBC741 /* ImageBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B5218C1D864A9800EBC741 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66B5218E1D864A9800EBC741 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,10 +85,6 @@
 		66B521AC1D864A9800EBC741 /* ImageBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B521B01D864A9900EBC741 /* ImageBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserUITests.m; sourceTree = "<group>"; };
 		66B521B21D864A9900EBC741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66B521BE1D864B3900EBC741 /* PhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoView.h; sourceTree = "<group>"; };
-		66B521BF1D864B3900EBC741 /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
-		66B521C11D864B8600EBC741 /* ImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserViewController.h; sourceTree = "<group>"; };
-		66B521C21D864B8600EBC741 /* ImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserViewController.m; sourceTree = "<group>"; };
 		66B521C51D864DAA00EBC741 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		66B521C61D864DAA00EBC741 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		66B521C71D864DAA00EBC741 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -156,6 +156,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41C4E20C24FF3E6F00927D8C /* ImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				41C4E20D24FF3E6F00927D8C /* ImageBrowserViewController.m */,
+				41C4E20E24FF3E6F00927D8C /* PhotoView.h */,
+				41C4E20F24FF3E6F00927D8C /* ImageBrowserViewController.h */,
+				41C4E21024FF3E6F00927D8C /* PhotoView.m */,
+			);
+			path = ImageBrowser;
+			sourceTree = "<group>";
+		};
 		66B5217F1D864A9800EBC741 = {
 			isa = PBXGroup;
 			children = (
@@ -179,15 +190,12 @@
 		66B5218A1D864A9800EBC741 /* ImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				41C4E20C24FF3E6F00927D8C /* ImageBrowser */,
 				66B521D71D8650D600EBC741 /* ThirdParty */,
 				66B5218E1D864A9800EBC741 /* AppDelegate.h */,
 				66B5218F1D864A9800EBC741 /* AppDelegate.m */,
 				66B521911D864A9800EBC741 /* ViewController.h */,
 				66B521921D864A9800EBC741 /* ViewController.m */,
-				66B521BE1D864B3900EBC741 /* PhotoView.h */,
-				66B521BF1D864B3900EBC741 /* PhotoView.m */,
-				66B521C11D864B8600EBC741 /* ImageBrowserViewController.h */,
-				66B521C21D864B8600EBC741 /* ImageBrowserViewController.m */,
 				66B5218B1D864A9800EBC741 /* Supporting Files */,
 			);
 			path = ImageBrowser;
@@ -389,6 +397,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -450,6 +459,7 @@
 				66B5220C1D8650D600EBC741 /* UIImage+GIF.m in Sources */,
 				66B522051D8650D600EBC741 /* SDWebImageCompat.m in Sources */,
 				66B5220B1D8650D600EBC741 /* UIButton+WebCache.m in Sources */,
+				41C4E21224FF3E6F00927D8C /* PhotoView.m in Sources */,
 				66B5220D1D8650D600EBC741 /* UIImage+MultiFormat.m in Sources */,
 				66B522101D8650D600EBC741 /* UIView+WebCacheOperation.m in Sources */,
 				66B5220A1D8650D600EBC741 /* SDWebImagePrefetcher.m in Sources */,
@@ -463,11 +473,10 @@
 				66B522031D8650D600EBC741 /* NSData+ImageContentType.m in Sources */,
 				66B522071D8650D600EBC741 /* SDWebImageDownloader.m in Sources */,
 				66B5218D1D864A9800EBC741 /* main.m in Sources */,
-				66B521C01D864B3900EBC741 /* PhotoView.m in Sources */,
 				66B522021D8650D600EBC741 /* README.md in Sources */,
 				66B522091D8650D600EBC741 /* SDWebImageManager.m in Sources */,
-				66B521C31D864B8600EBC741 /* ImageBrowserViewController.m in Sources */,
 				66B5220E1D8650D600EBC741 /* UIImageView+HighlightedWebCache.m in Sources */,
+				41C4E21124FF3E6F00927D8C /* ImageBrowserViewController.m in Sources */,
 				66B522041D8650D600EBC741 /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,6 +701,7 @@
 				66B521B71D864A9900EBC741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66B521B81D864A9900EBC741 /* Build configuration list for PBXNativeTarget "ImageBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -700,6 +710,7 @@
 				66B521BA1D864A9900EBC741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66B521BB1D864A9900EBC741 /* Build configuration list for PBXNativeTarget "ImageBrowserUITests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +719,7 @@
 				66B521BD1D864A9900EBC741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

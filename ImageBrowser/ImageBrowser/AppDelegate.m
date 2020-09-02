@@ -2,18 +2,18 @@
 //  AppDelegate.m
 //  ImageBrowser
 //
-//  Created by msk on 16/9/1.
-//  Copyright © 2016年 msk. All rights reserved.
+//  Created by mask on 16/9/1.
+//  Copyright © 2016年 mask. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -22,11 +22,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    ViewController *vc=[[ViewController alloc]init];
-    UINavigationController *rootNav=[[UINavigationController alloc]init];
+    ViewController *vc = [[ViewController alloc] init];
+    UINavigationController *rootNav = [[UINavigationController alloc] init];
     [rootNav addChildViewController:vc];
     
-    self.window.rootViewController=rootNav;
+    self.window.rootViewController = rootNav;
     
     return YES;
 }
