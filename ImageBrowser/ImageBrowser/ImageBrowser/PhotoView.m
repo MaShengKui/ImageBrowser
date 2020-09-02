@@ -177,10 +177,10 @@
 #pragma mark - 计算图片原始高度，用于高度自适应
 - (CGRect)caculateOriginImageSizeWith:(UIImage *)image {
     CGFloat originImageHeight = [self imageCompressForWidth:image targetWidth:WIDTH].size.height;
-    if (originImageHeight>=HEIGHT) {
-        originImageHeight=HEIGHT;
+    if (originImageHeight >= HEIGHT) {
+        originImageHeight = HEIGHT;
     }
-    CGRect frame = CGRectMake(0, (HEIGHT-originImageHeight)*0.5, WIDTH, originImageHeight);
+    CGRect frame = CGRectMake(0, (HEIGHT - originImageHeight)*0.5, WIDTH, originImageHeight);
     return frame;
 }
 
